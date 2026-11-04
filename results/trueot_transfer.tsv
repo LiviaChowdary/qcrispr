@@ -1,0 +1,4 @@
+subset	n	n_active	cfd_aupr	model_aupr
+all	351483	100	0.144620	0.427354
+bulge only	118170	27	0.029349	0.244456
+mismatch only	233313	73	0.233532	0.498938

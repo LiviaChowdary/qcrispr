@@ -1,0 +1,45 @@
+Third-party data used by this repository
+=======================================
+
+No dataset or scoring table is redistributed here. Everything is downloaded
+by scripts/fetch_data.sh at the user's own request, and the terms below apply
+to that data rather than to this code. Read them before using this repository
+for anything commercial.
+
+CFD mismatch and PAM tables
+---------------------------
+Origin: Doench et al. 2016, Nature Biotechnology 34(2):184-191,
+doi:10.1038/nbt.3437, Supplementary Table 19.
+
+Obtained from third-party vendored copies, since there is no official
+machine-readable release. The copy in maximilianh/crisporWebsite under
+CFD_Scoring/ states that use is free only for academic or non-profit
+organisations and that commercial use requires a separate license.
+
+Consequence for this repository: data/cfd_mismatch.tsv and data/cfd_pam.tsv
+are NOT committed. They are generated locally by scripts/import_cfd.py from a
+copy the user downloads. To use this work commercially, obtain the weights
+under terms that permit it, or substitute a differently licensed scoring
+model. The code path for that already exists, since any TSV with the same
+columns loads in their place.
+
+CHANGE-seq measured off-target data
+-----------------------------------
+Origin: Lazzarotto et al. 2020, Nature Biotechnology 38:1317-1327,
+doi:10.1038/s41587-020-0555-7. GEO accession GSE149295, BioProject
+PRJNA625995.
+
+Obtained in processed form from github.com/OrensteinLab/SysEvalOffTarget.
+
+Bulge-aligned datasets and the refined TrueOT benchmark
+-------------------------------------------------------
+Origin: Yaish and Orenstein 2024, Nucleic Acids Research 52(12):6777-6790,
+doi:10.1093/nar/gkae428. Code and data at
+github.com/OrensteinLab/CRISPR-Bulge, archived at Zenodo
+doi:10.5281/zenodo.10902355.
+
+The refined TrueOT benchmark derives from TrueOT, curated by the Bao lab at
+Rice University, github.com/baolab-rice/CRISPR_OT_scoring.
+
+Check each source's own license before redistribution. This repository asserts
+no rights over any of them.

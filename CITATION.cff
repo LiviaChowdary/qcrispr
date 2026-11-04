@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+title: "qcrispr: set-level CRISPR guide selection with bulge-aware off-target scoring"
+message: "If you use this software, please cite it and the datasets it evaluates on. See NOTICE."
+type: software
+authors:
+  - given-names: Livia
+repository-code: "https://github.com/REPLACE-ME/qcrispr"
+license: MIT
+abstract: >-
+  Guide-RNA selection for multiplex CRISPR editing, posed as a quadratic binary
+  optimisation problem over a set of guides rather than a per-guide ranking,
+  with bulge-aware off-target enumeration and scoring. Reports AUPR 0.4274 with
+  a bootstrap interval of 0.341 to 0.522 on the refined TrueOT benchmark,
+  trained on CHANGE-seq and fine-tuned on cellular GUIDE-seq with all benchmark
+  guides excluded from training. Includes a comparison against the published
+  CFD score on matched folds, which the existing benchmark literature omits,
+  and a negative result on QAOA for the selection problem.
+keywords:
+  - CRISPR
+  - off-target prediction
+  - guide RNA design
+  - combinatorial optimisation
+  - QAOA
+references:
+  - type: article
+    title: "Optimized sgRNA design to maximize activity and minimize off-target effects of CRISPR-Cas9"
+    authors:
+      - family-names: Doench
+        given-names: John G.
+    journal: "Nature Biotechnology"
+    volume: 34
+    issue: 2
+    start: 184
+    end: 191
+    year: 2016
+    doi: "10.1038/nbt.3437"
+  - type: article
+    title: "CHANGE-seq reveals genetic and epigenetic effects on CRISPR-Cas9 genome-wide activity"
+    authors:
+      - family-names: Lazzarotto
+        given-names: Cicera R.
+    journal: "Nature Biotechnology"
+    volume: 38
+    start: 1317
+    end: 1327
+    year: 2020
+    doi: "10.1038/s41587-020-0555-7"
+  - type: article
+    title: "Modeling CRISPR-Cas9 off-target activity with bulges"
+    authors:
+      - family-names: Yaish
+        given-names: Ofir
+      - family-names: Orenstein
+        given-names: Yaron
+    journal: "Nucleic Acids Research"
+    volume: 52
+    issue: 12
+    start: 6777
+    end: 6790
+    year: 2024
+    doi: "10.1093/nar/gkae428"

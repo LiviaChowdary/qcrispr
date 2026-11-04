@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Third-party data, downloaded by scripts/fetch_data.sh. About 2.2 GB, and
+# none of it is ours to redistribute. See NOTICE.
+external/
+
+# The CFD tables are deliberately NOT committed. They are licensed for
+# academic and non-profit use only, so redistributing them here under this
+# repository's MIT license would be wrong. scripts/import_cfd.py regenerates
+# them locally. See NOTICE.
+data/cfd_mismatch.tsv
+data/cfd_pam.tsv
+
+# Generated artifacts: regenerate with `qcrispr demo-genome` and `qcrispr dataset`.
+data/demo_genome.fa
+data/demo_planted.tsv
+data/*.npz
+
+# Result tables are committed as the research record; prediction dumps are not.
+results/*.npz
+results/*.log
