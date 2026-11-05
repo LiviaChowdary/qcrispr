@@ -4,7 +4,7 @@ message: "If you use this software, please cite it and the datasets it evaluates
 type: software
 authors:
   - given-names: Livia
-repository-code: "https://github.com/REPLACE-ME/qcrispr"
+repository-code: "https://github.com/LiviaChowdary/qcrispr"
 license: MIT
 abstract: >-
   Guide-RNA selection for multiplex CRISPR editing, posed as a quadratic binary
